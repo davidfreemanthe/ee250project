@@ -12,7 +12,7 @@ SOUND_SENSOR_PORT = 0  # Assuming A0 for sound sensor
 LIGHT_SENSOR_PORT = 1  # Assuming A1 for light sensor
 
 # Thresholds for sensors
-SOUND_THRESHOLD = 200  # Example threshold, adjust based on your environment
+SOUND_THRESHOLD = 100  # Example threshold, adjust based on your environment
 LIGHT_THRESHOLD = 300  # Example threshold, adjust based on your environment
 DISTANCE_THRESHOLD = 50  # in cm, for ultrasonic sensor
 
