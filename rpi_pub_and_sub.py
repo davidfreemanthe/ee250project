@@ -5,7 +5,7 @@ import grovepi
 from grove_rgb_lcd import *
 
 # Sensor and Actuator Ports
-#LED_PORT = 4
+LED_PORT = 5
 BUZZER_PORT = 4  #  using port D4 for the Buzzer
 ULTRASONIC_PORT = 7
 SOUND_SENSOR_PORT = 2  #  A2 for sound sensor
