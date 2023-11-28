@@ -6,15 +6,15 @@ from grove_rgb_lcd import *
 
 # Sensor and Actuator Ports
 LED_PORT = 4
-BUZZER_PORT = 5  # Assuming you're using port D5 for the Buzzer
+BUZZER_PORT = 5  #  using port D5 for the Buzzer
 ULTRASONIC_PORT = 7
-SOUND_SENSOR_PORT = 0  # Assuming A0 for sound sensor
-LIGHT_SENSOR_PORT = 1  # Assuming A1 for light sensor
+SOUND_SENSOR_PORT = 2  #  A2 for sound sensor
+LIGHT_SENSOR_PORT = 0  #  A1 for light sensor
 
 # Thresholds for sensors
 SOUND_THRESHOLD = 100  # Example threshold, adjust based on your environment
 LIGHT_THRESHOLD = 300  # Example threshold, adjust based on your environment
-DISTANCE_THRESHOLD = 50  # in cm, for ultrasonic sensor
+DISTANCE_THRESHOLD = 12  # in cm, for ultrasonic sensor
 
 # MQTT setup
 USERNAME = "dthe"
