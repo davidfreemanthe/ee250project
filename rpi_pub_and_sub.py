@@ -40,7 +40,7 @@ def check_sensors_and_publish(client):
     light_level = grovepi.analogRead(LIGHT_SENSOR_PORT)
 
     # Check thresholds
-    if distance < DISTANCE_THRESHOLD or sound_level > SOUND_THRESHOLD or light_level > LIGHT_THRESHOLD:
+    if distance < DISTANCE_THRESHOLD and sound_level > SOUND_THRESHOLD and light_level > LIGHT_THRESHOLD:
         trigger_alarm()  # Trigger alarm if any condition is met
 
     # Publish sensor data
