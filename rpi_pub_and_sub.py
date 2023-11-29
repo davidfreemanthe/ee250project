@@ -31,6 +31,10 @@ app = Flask(__name__)
 grovepi.pinMode(LED_PORT, "OUTPUT")
 grovepi.pinMode(BUZZER_PORT, "OUTPUT")
 
+# MQTT Connection Callback
+def on_connect(client, userdata, flags, rc):
+    print("Connected with result code " + str(rc))
+
 def trigger_alarm():
     grovepi.digitalWrite(BUZZER_PORT, 1)  # Activate buzzer
     time.sleep(1)  # Buzzer on for 1 second
@@ -83,4 +87,5 @@ if __name__ == '__main__':
     while True:
         check_sensors_and_publish(client)
         time.sleep(1)
+
 
