@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Security Breach Log</title>
+</head>
+<body>
+    <h1>Security Breach Log</h1>
+    <ul>
+        {% for breach in breaches %}
+            <li>{{ breach }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
